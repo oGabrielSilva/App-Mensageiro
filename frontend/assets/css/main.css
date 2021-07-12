@@ -1,0 +1,78 @@
+main {
+    margin-top: 10vh;
+    min-height: 90vh;
+    padding: 1rem;
+}
+
+main .logo-main, main .txt-main {
+    padding: 1rem;
+    margin: 1rem 0;
+    background: var(--black);
+    color: var(--light);
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    user-select: none;
+}
+
+main .txt-main .links {
+    width: 100%;
+}
+
+main .txt-main .links .locals-links {
+    width: 100%;
+}
+
+main .txt-main .links .locals-links h5 {
+    margin-bottom: .5rem;
+}
+
+main .txt-main .links .locals-links button {
+    background: var(--blue);
+    color: var(--gray);
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    font-weight: bold;
+    margin: .5rem 0;
+}
+
+main .txt-main .txt p strong a {
+    color: #2196f3;
+}
+
+main .txt-main .txt .locals-links .ul {
+    min-height: 10vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+}
+
+main .txt-main .txt .locals-links .none {
+    display: none;
+}
+
+main .txt-main .txt .locals-links .ul li {
+    display: flex;
+}
+
+main .txt-main .txt .locals-links .ul li a {
+    color: var(--blue);
+    font-size: .8rem;
+    text-align: center;
+    width: 100%;
+    padding: .5rem 1rem;
+    background: var(--light);
+    border: 1px solid var(--gray);
+}
+
+main .txt-main .txt .locals-links .ul li a:hover {
+    background: var(--gray);
+}
+
+main .logo-main .img img,
+main .txt-main .img img {
+    height: 4rem;
+    margin-right: 1rem;
+}

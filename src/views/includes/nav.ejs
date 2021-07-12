@@ -1,0 +1,23 @@
+<nav class="navbar">
+    <div class="elements in-logo">
+        <a href="/">
+            <img src="/assets/img/logo1.svg" draggable="false" alt="Logo" class="logo">
+            <p>Inifinity</p>
+        </a>
+    </div>
+    <div class="elements">
+        <button><img src="/assets/img/btn.svg" draggable="false" class="btn-menu" alt="Menu"></button>
+    </div>
+    <div class="elements options none">
+        <ul class="navbarElements">
+            <li><a href="/">Home</a></li>
+            <% if(user) { %>
+                <li><a href="/contacts">Contatos</a></li>
+                <li><a href="/out">Sair</a></li>
+            <% } else { %>
+                <li><a href="/signup">Criar sua conta</a></li>
+                <li><a href="/signup#email-login">Sua conta</a></li>
+            <% } %> 
+        </ul>
+    </div>
+</nav>

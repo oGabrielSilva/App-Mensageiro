@@ -1,0 +1,90 @@
+<%- include('includes/head') %>
+    <%- include('includes/nav') %>
+    <main>
+        <% if(!user) { %>
+            <div class="logo-main">
+                <div class="img">
+                    <img src="./assets/img/logo0.svg" draggable="false" alt="Logo">
+                </div>
+                <div class="txt">
+                    <p>
+                        Infinity Mensageiro <br> 
+                        <small>Faça um teste abaixo sem precisar criar uma conta</small>
+                    </p>
+                </div>
+            </div>
+    
+            <div class="chat-geral">
+                <p>OFF TOPIC</p>
+                <input type="text" name="msg" class="nick-input" placeholder="Digite seu nome aqui...">
+                <div class="chat">
+    
+                </div>
+                <form action="#" method="POST" class="msg">
+                    <input type="text" name="msg" class="msg-input" placeholder="Sua mensagem...">
+                    <button type="submit" class="btn">&#10148;</button>
+                </form>
+            </div>
+    
+            <div class="txt-main">
+                <div class="img">
+                    <img src="./assets/img/logo0.svg" draggable="false" alt="Logo">
+                </div>
+                <div class="txt">
+                    <p>
+                        <strong><a href="/signup">Crie sua conta!</a></strong> <br>
+                        <small><strong>Sem uma conta, você tem acesso a apenas um chat geral que está acima.</strong></small> 
+                        <br> 
+                        <small>A aplicação oferece contas gratuitas. É possível conversar em particular e/ou em grupos de temas variados.</small>
+                    </p>
+                </div>
+            </div>
+        <% } else { %>
+            <div class="txt-main">
+                <div class="img">
+                    <img src="./assets/img/logo0.svg" draggable="false" alt="Logo">
+                </div>
+                <div class="txt">
+                    <p>
+                        <strong>Boas-vindas de volta </strong> 
+                    </p>
+                    <h6><%- user.name %> </h6>
+                    <small>Sentimos a sua falta, acredita?</small>
+                </div>
+            </div>
+            <div class="txt-main">
+                <div class="txt links">
+                    <nav class="locals-links">
+                        <h5>Estarei listando os seus links aqui:</h5>
+                        <button id="btn-links">Veja seus links</button>
+                        <ul class="ul none" id="links">
+                            <li><a href="/chat">Off topic</a></li>
+                            <li><a href="#">Games</a></li>
+                            <li><a href="#">Animes</a></li>
+                            <li><a href="#">Filmes</a></li>
+                            <li><a href="#">Séries</a></li>
+                            <li><a href="#">Programação</a></li>
+                            <li><a href="#">Marvel</a></li>
+                            <li><a href="#">Universo</a></li>
+                            <li><a href="#">Signos</a></li>
+                            <li><a href="#">RPG</a></li>
+                            <li><a href="#">Esportes</a></li>
+                            <li><a href="#">E-sports</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="chat-geral">
+                <p>OFF TOPIC</p>
+                <input type="text" name="msg" class="nick-input" value="<%- user.name %>" readonly>
+                <div class="chat">
+    
+                </div>
+                <form action="#" method="POST" class="msg">
+                    <input type="text" name="msg" class="msg-input" placeholder="Sua mensagem...">
+                    <button type="submit" class="btn">&#10148;</button>
+                </form>
+            </div>
+        <% } %> 
+    </main>
+<%- include('includes/footer') %>

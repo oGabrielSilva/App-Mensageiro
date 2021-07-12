@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root {
+    --black: #000000;
+    --gray: #efefef;
+    --text-gray: #313131;
+    --light: #fff;
+    --blue: #4040f8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 14.4px;
+}
+
+button {
+    cursor: pointer;
+}
+
+small {
+    font-size: .8rem;
+}

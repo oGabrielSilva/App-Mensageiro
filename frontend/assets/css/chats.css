@@ -1,0 +1,102 @@
+.btn-room {
+    padding: .5rem 1rem;
+    color: var(--light);
+    background: transparent;
+    border: 1px solid var(--gray);
+    border-radius: .3rem;
+    margin: .5rem;
+    font-size: 11px;
+}
+
+.chat-geral {
+    display: flex;
+    margin: 2rem 0 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: .5rem;
+    padding: 1rem;
+    border: 1px solid var(--gray);
+}
+
+.chat-geral .nick-input {
+    margin: .5rem 0;
+    color: var(--text-gray);
+    padding: .5rem;
+    width: 100%;
+    border: 1px solid var(--gray);
+    font-size: 12px;
+}
+
+.chat-geral .chat span {
+    font-size: 11px;
+}
+
+.chat-geral .chat {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--gray);
+    overflow: auto;
+    border-radius: .2rem;
+}
+
+.chat-geral .msg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.chat-geral .msg .msg-input {
+    padding: 0 1rem;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+    width: 96%;
+    font-size: .8rem;
+    color: var(--text-gray);
+    border: 1px solid var(--gray);
+    height: 2.3rem;
+}
+
+.chat-geral .msg .btn {
+    background: var(--blue);
+    color: var(--light);
+    font-size: 1rem;
+    height: 2.3rem;
+    width: 2.3rem;
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+}
+
+.chat-geral .chat .msg-send-chat {
+    padding: .5rem;
+    background: var(--light);
+    color: #2d2a2a;
+    margin: .5rem auto 0 .5rem;
+    max-width: 50%;
+    border-bottom-right-radius: .5rem;
+    border-top-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    border: 1px solid #c1c1c1;
+}
+
+.chat-geral .chat .msg-send-chat-me {
+    padding: .5rem;
+    background: var(--gray);
+    color: #2d2a2a;
+    margin: .5rem .5rem 0 auto;
+    max-width: 50%;
+    border-bottom-left-radius: .5rem;
+    border-top-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    border: 1px solid #c1c1c1;
+}
+
+.chat-geral .chat .msg-send-chat-me .nick {
+    text-align: right;
+} 

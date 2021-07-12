@@ -1,0 +1,36 @@
+main.sign .local {
+    border: 1px solid var(--gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 0;
+    padding: 2rem 0;
+}
+
+main.sign .local p {
+    padding: 0 1rem;
+    width: 80%;
+    margin: .5rem 0;
+}
+
+main.sign form input {
+    border-bottom: 2px solid var(--gray);
+    padding: .5rem 1rem;
+    margin: 1rem 0;
+    width: 80%;
+}
+
+main.sign form button {
+    padding: .5rem 1rem;
+    margin: 1rem auto 1rem 10%;
+    background: var(--blue);
+    color: var(--gray);
+    border-radius: .3rem;
+    font-weight: bold;
+}
+
+main.sign form input:focus {
+    border-radius: .3rem;
+    border: 3px solid var(--blue);
+}

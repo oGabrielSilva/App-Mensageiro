@@ -1,0 +1,40 @@
+<%- include('includes/head') %>
+    <%- include('includes/nav') %>
+    <main class="sign">
+        <%- include('includes/messages') %>
+
+        <div class="alert local">
+            <p>
+                <strong>Crie uma conta.</strong> Utilizando uma conta, os usuários conseguem criar chats privados,
+                acessar grupos com temas variados e, assim, conhecer novas pessoas de forma mais fácil.
+            </p>
+            <p>
+                Se você não possui privacidade em seu próprio celular, utilize aqui e troque mensagens sobre
+                assuntos particulares com seus amigos, é muito simples. Basta ambos possuírem contas.
+            </p>
+            <p>
+                <strong>Atenção: </strong>
+                as mensagens não são salvas e o bate-papo se reinicia a cada atualização da página. Ou seja, as mensagens
+                se perdem e não existe um histórico em nossos servidores.
+            </p>
+        </div>
+
+        <form action="/signup" method="POST" class="local form">
+            <h2>Crie sua conta</h2>
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+            <input type="txt" name="name" placeholder="Nome" id="name" maxlength="35">
+            <input type="email" name="email" placeholder="exemplo@exemplo.com" id="email">
+            <input type="password" name="password" placeholder="Senha de 8 a 20 caracteres" id="password" maxlength="20" minlength="8">
+            <button type="submit">Criar conta</button>
+        </form>
+
+        <form action="/signin" method="POST" class="local form">
+            <h2>Ou faça seu login</h2>
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+            <input type="email" name="email" placeholder="exemplo@exemplo.com" id="email-login">
+            <input type="password" name="password" placeholder="Senha de 8 a 20 caracteres" id="password-login" maxlength="20" minlength="8">
+            <button type="submit">Criar conta</button>
+        </form>
+    </main>
+
+<%- include('includes/footer') %>

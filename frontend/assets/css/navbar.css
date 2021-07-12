@@ -1,0 +1,94 @@
+.none {
+    display: none;
+}
+
+.navbar-animation {
+    display: block;
+    animation: navbar .5s;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    width: 100vw;
+    height: 10vh;
+    background: var(--black);
+    border-bottom: 1px solid var(--gray);
+}
+
+.navbar .logo {
+    height: 8vh;
+}
+
+.navbar .in-logo, .navbar .in-logo a{
+    display: flex;
+    align-items: center;
+    color: var(--light);
+    cursor: pointer;
+}
+
+.navbar .in-logo img {
+    user-select: none;
+}
+
+.navbar .in-logo p {
+    margin-left: .5rem;
+    font-size: 1.2rem;
+    user-select: none;
+}
+
+.navbar .elements ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+}
+
+.navbar .options {
+    position: fixed;
+    top: 10vh;
+    min-height: 30vh;
+    width: 100%;
+    background: var(--black);
+    right: 0;
+    border-top: 1px solid #4d4d4d;
+}
+
+.navbar .elements li {
+    width: 90%;
+    font-size: 1rem;
+    background: var(--light);
+}
+
+.navbar .elements li a {
+    color: #797979;
+    padding: .5rem;
+    display: block;
+}
+
+.navbar .elements button {
+    display: flex;
+    background: transparent;
+    border: 1px solid #4d4d4d;
+    border-radius: 5px;
+    padding: .2rem .5rem;
+    cursor: pointer;
+}
+
+.navbar .elements button:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+.navbar .elements button img {
+    height: 6vh;
+}
+
+.navbar .elements li a:hover {
+    transition: .6s;
+    color: var(--black);
+}

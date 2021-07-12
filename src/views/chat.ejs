@@ -1,0 +1,18 @@
+<%- include('includes/head') %>
+    <%- include('includes/nav') %>
+    <main>
+        <%- include('includes/messages') %>
+        <div class="chat-geral">
+            <p><%= room.toUpperCase() %></p>
+            <input type="text" name="msg" class="nick-input" value="<%- user.name %>" readonly>
+            <div class="chat">
+
+            </div>
+            <form action="#" method="POST" class="msg">
+                <input type="text" name="msg" class="msg-input" placeholder="Sua mensagem...">
+                <button type="submit" class="btn">&#10148;</button>
+            </form>
+        </div>
+    </main>
+
+<%- include('includes/footer') %>
